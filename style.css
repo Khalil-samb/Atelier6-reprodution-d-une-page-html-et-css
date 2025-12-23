@@ -15,6 +15,7 @@
 body{
     background-color: rgb(245, 245, 245);
     position: static;
+    background-color: #e7ded0;
 }
 header{
     padding: 0px 8%;
@@ -86,6 +87,7 @@ section{
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  
 }
 
 .btn-primary {
@@ -109,11 +111,13 @@ section{
 #accueil {
     height: 500px;
     width: 100%;
-    background-image: url("image/banner-head-accueil.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8),rgba(133, 56, 14, 0.747)), url("image/banner-head-accueil.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(0.3px);
+   
+
 }
 .position{
      
@@ -122,6 +126,7 @@ section{
     justify-content: space-between;
     display: flex;
     min-height: 100vh;
+
     
 }
 .description {
@@ -140,7 +145,9 @@ section{
     overflow: hidden;
     z-index: 0;
     transform: translateX(1001px);
-
+    width: 40%;
+    border: 10px;
+    
 }
 
 
@@ -151,21 +158,23 @@ section{
     left: 850px;
     transform: translateY(-100px);
     border-radius: 40px;
+    
 }
 #Restaurants {
     justify-content: space-between;
     display: flex;
-    border-radius: 30px;
-    background-color: #FFF3E0;
+    background-color: #ebdfcc;
+    cursor: pointer;
+    padding: 60px 20%;
+    
     
 }
 #Restaurants .restos {
     border-radius: 1rem;
     background-color: #f7f2f2;
-    padding: 15px;
-    margin:10px;
-    overflow: hidden;
-    cursor: pointer;
+    padding: 20px;
+    margin:15px;
+    overflow: hidden;   
     box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
     text-align: center
 }
@@ -175,8 +184,9 @@ section{
     color:#845c00;
 }
 #Restaurants .restos:hover{
-    background-color: #60451c;
+  background-color:#ffb300 ;
 }
+
 #cuisine {
     display: flex;
     flex-direction: column;
@@ -203,7 +213,8 @@ section{
 #cuisine .second .bote{
     padding: 30px;
     border-radius: 12px;
-    background-color: #FFF3E0;   
+    background-color: #FFF3E0; 
+    box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;  
 }
 #cuisine .second .bote:hover{
     background-color: #60451c;
@@ -225,6 +236,7 @@ section{
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px;
+  
 }
 
 .testimonials h2 {
@@ -239,6 +251,7 @@ section{
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+  
 }
 
 @media (min-width: 560px) {
@@ -270,6 +283,8 @@ section{
   align-items: center;
   gap: 12px;
   margin-bottom: 10px;
+  
+  
   
 }
 .avatar {
@@ -330,14 +345,16 @@ section{
   outline: none;
   border-color: rgba(29, 19, 19, 0.22);
   box-shadow: 0 0 0 3px rgba(147, 76, 4, 0.25);
+  mix-blend-mode: multiply;
+
   }
+  
 #commencer {
    text-align: center;
-    background-image: url("image/banner-head-accueil.jpg"); /* remplace par ton image réelle */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8),rgba(133, 56, 14, 0.747)),url("image/banner-head-accueil.jpg"); /* remplace par ton image réelle */
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
-    border-radius: 25px;
     text-align: center;
     color: rgb(223, 195, 195);
     max-width: 100%;
@@ -345,6 +362,7 @@ section{
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px); /* effet flou si image semi-transparente */  
     filter: blur(0.3px);
+    
 }
 
 #commencer h2 {
@@ -399,3 +417,309 @@ section{
      color: rgb(116, 113, 113);
      text-align: center;
 }
+
+/* page traiteurs */
+
+.affichage{
+  background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8),rgba(200, 147, 118, 0.747)), url(image/banner-caterers.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(0.3px);
+  background: linear-gradient();
+  
+   
+}
+.affichage .description {
+  padding: 10px 21%;
+  color: rgb(241, 237, 237);
+  font-size: 18px;
+  }
+  .filtre {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #e7ded0;
+  }
+  .debut  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 600px;
+    
+  }
+  .choix {
+    
+    padding: 20px;
+  }
+  .choix select {
+    padding: 10px;
+    font-size: 15px;
+
+  }
+  .filtre .btn button  {
+    padding: 9px 25px;
+    margin: 9px 0px;
+    border: 0;
+    border-radius: 10px;
+  }
+  .filtre .btn .filtrer {
+    background-color: #ffb300;
+    color: white;
+    font-weight: bold;
+  }
+  .cart-verification{
+    background-color: #e7ded0;
+  }
+  .verification-1 .image-verification img {
+      height: 220px;
+      width: 220px;
+      object-fit: cover;
+    }
+  .verification-1 {
+    display: flex;
+    gap: 8px;
+    background-color:#f0e6d6;
+    width: 80%;
+    margin: 18px 20px;
+    padding: 8px;
+    box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
+    border-radius: 20px;
+  }
+  .verification-1 .bloque {
+    background-color: #313234;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  .verification-1 .info {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #575454;
+    padding: 10px;
+  }
+  .verification-1 .info span{
+    background-color: #e7e2e2;
+    border-radius: 12px;
+    display:flex;
+    padding: 2px;
+    justify-content: center;
+  }
+  .verification-1 .finprofil {
+    padding: 20px;
+    margin: 15px;
+    transform: translateX(505px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .verification-1 .finprofil button{
+    padding: 20px 20px;
+    background-color: #111827;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+   
+  }
+  .verification-1 .finprofil strong {
+
+  }
+  .devenir-traiteur {
+    background-image: url(image/banner-head-accueil.jpg);
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(0.3px);
+    background: linear-gradient();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+  }
+  .devenir-traiteur .description-traiteur {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(229, 197, 182);
+    font-weight: bold;
+  }
+  .devenir-traiteur .button-traiteur {
+    padding: 10px;
+    margin: 15px;
+  }
+  .devenir-traiteur .button-traiteur button{
+    padding: 23px;
+    border-radius: 14px;
+    background-color:rgb(225, 204, 176) ;
+    font-size: 16px;
+    color: rgb(50, 33, 33);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+  }
+ /* formulaire */
+ .formulaire{
+  width: 70%;
+  background-color: #f3f4f6;
+  padding: 15px 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  left: 200px;
+  box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
+ }
+ .information-de-base{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px;
+ }
+ .information-de-base .input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+ }
+ .information-de-base .input input{
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid ;
+ }
+ .information-de-base .input .input-grid{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  }
+  .informations-professionnelles .categorie{
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .informations-professionnelles .categorie #categorie {
+    padding: 15px;
+    /* text-align: center; */
+    font-size: 15px;
+  }
+  .informations-professionnelles .categorie label{
+    font-size: 20px;
+    padding: 8px;
+  }
+  .formulaire .annee{
+    display: flex;
+    flex-direction: column;
+  }
+  .formulaire .annee label{
+    font-size: 20px;
+  }
+  .formulaire .annee input{
+    width: 100%;
+    height: 40px;
+  }
+  .formulaire .Description {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulaire .Description label{
+    font-size: 20px;
+  }
+  .formulaire .Description textarea{
+    width: 100%;
+    height: 100px;
+  }
+
+  .formulaire .service-propose {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:20px ;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .formulaire .service-propose .coche {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    
+  }
+  .formulaire .service-propose .service-title {
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .formulaire .information-de-contact p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .formulaire .input-info-de-contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 30px;
+  }
+  .formulaire .input-info-de-contact .telephone {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .formulaire .input-info-de-contact .telephone label {
+    font-size: 15px;
+  }
+  .formulaire .input-info-de-contact .telephone input{
+    padding: 10px;
+
+  }
+  .formulaire .input-info-de-contact .adresse {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .formulaire .input-info-de-contact .adresse label {
+    font-size: 15px;
+  }
+  .formulaire .input-info-de-contact .adresse input{
+    padding: 10px;
+  }
+  .formulaire .photo-de-profil {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+  }
+  .formulaire .photo-de-profil .choix-fichier strong{
+    background-color: #b0a57d;
+    color:  #ffb300;
+    padding: 3px;
+    border: 0.5px solid black;
+  }
+  .formulaire .button-fin {
+  padding: 20px;  
+  position: relative;
+  }
+  .formulaire .button-fin button {
+    padding: 20px 20px;
+    background-color:#ffb300;
+    border-radius: 10px;
+    position: absolute;
+    left: 1000px;
+    top: -12px;
+  
+  }
+  .formulaire .button-fin button:hover{
+    transform: rotate(5deg);
+    background-color: orange;
+    box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
+
+  }

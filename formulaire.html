@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="en-tete" >
+        <div class="logo-tete">
+            <img src="image/logo.png" alt="logo-tete">
+            
+        </div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#restaurant">Restaurants</a></li>
+            <li><a href="#cuisine">Cours de cuisine</a></li>
+            <li><a href="traiteurs.html">Traiteurs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="button-container">
+            <button class="btn btn-secondary">Connexion</button>
+            <button class="btn btn-primary">Inscription</button>
+        </div>
+
+     </header>
+     <section class="affichage">
+        <div class="description" >
+            <h1>Nos Traiteurs</h1>
+            <p>Découvrer nos Traiteurs professionnels pour vos evenements, mariages, baptémes et receptions.</p>
+        </div>
+    </section>
+    <section class="formulaire">
+        <div class="information-de-base">
+           <div class="information"> 
+                <h2>Information de base</h2>
+            </div>
+            <div class="input">
+                <div class="input-grid">
+                    <label for="name">Nom complet</label>
+                    <input type="text" placeholder="nom complet">
+                </div>
+                <div class="input-grid">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="input-grid">
+                    <label for="password">Mot de passe</label>
+                    <input type="password">
+                </div>
+                <div class="input-grid">
+                    <label for="password">Confirmer le mot de passe</label>
+                    <input type="password">
+                </div>         
+            </div>
+        </div>
+        <div class="informations-professionnelles">
+            <div class="information-professionnelles">
+                <h2>Information-professionnelles</h2>
+            </div>
+            <div class="categorie">
+                
+                <label for="categorie">categorie</label> 
+                <select name="categorie" id="categorie">
+                    <option value="">Sélectionnez une catégorie</option>
+                    <option value="khalil">1</option>
+                    <option value="aby">2</option>
+                    <option value="karim">3</option>
+                </select>
+            </div>
+        </div>
+        <div class="annee">
+            <label for="annee">Années d'experience</label>
+            <input type="text">
+        </div>
+        <div class="Description">
+            <label for="description">Description</label>
+            <textarea name="description" id="description-formulaire"></textarea>
+        </div>
+        <div class="service-propose">
+            <div class="service-title">
+                <label for="service">Service proposés</label>
+            </div>
+            <div class="coche">
+                <label><input type="checkbox"> mariages </label>
+                <label><input type="checkbox"> Evenement d'entreprise </label>
+                <label><input type="checkbox"> Buffets</label>
+                <label><input type="checkbox"> Cuisine sur mesure </label>
+                <label><input type="checkbox"> Anniversaire </label>
+                <label><input type="checkbox"> Cocktails </label>
+                <label><input type="checkbox"> Diners privés</label>
+            </div>
+        </div>
+        <div class="information-de-contact">
+            <p>Information de contact</p>
+            <div class="input-info-de-contact">
+                <div class="telephone">
+                    <label for="telephone">Téléphone</label>
+                    <input type="number">
+                </div>
+                <div class="adresse">
+                    <label for="adresse">Adresse</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="photo-de-profil">
+            <h2>Photo de profil</h2>
+            <div class="profil">
+                <p>photo</p>
+            </div>
+            <div class="choix-fichier">
+                <strong>Choisir un fichier</strong>
+                <span>Aucun fichier choisi</span>
+            </div>
+            <div class="formats-accepte">
+                <span>Formats accéptés: JPG, JPEG, Taille maximale:10MB</span>
+            </div>
+        </div>
+        <div class="button-fin">
+            <button>S'inscrire</button>
+        </div>
+    </section>
+    </section>
+    <section id="Contact" >
+    <div class="propos">
+        <h3>A propos</h3>
+        <div class="list" >
+            <h4>Qui sommes nous</h4>
+            <h4>Contact</h4>
+            <h4>Mentions légales</h4>
+            <h4>politique de confidence</h4>
+        </div>
+    </div>
+    <div class="service">
+        <h3>services</h3>
+        <div class="list" >
+            <h4>Traiteurs</h4>
+            <h4>Restaurants</h4>
+            <h4>Cours de cuisine</h4>
+        </div>
+    </div>
+    <div class="espace">
+        <h3>Espace pro</h3>
+        <div class="list" >
+            <h4>Devenir partenaire</h4>
+            <h4>Connexion</h4>
+            <h4>FAQ professionnels</h4>
+        </div>
+    </div>
+    <div class="contacter">
+        <h3>Contact</h3>
+        <div class="list" >
+            <h4>Star Buffet</h4>
+            <h4>Dakar, senegal</h4>
+            <h4>Tel:+221 77 000 00 00</h4>
+            <h4>Email: contact@gmail.com</h4>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <p>© 2025 Star Buffet. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
