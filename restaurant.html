@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tableau de bord — Restaurants</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="dashboard">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="image/logo.png" style="width: 70%;">
+        <span class="brand-name">Plateforme</span>
+      </div>
+
+      <nav class="menu" >
+        <ul>
+          <li class="menu-item ">
+            <a href="#" >Tableau de bord</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Cours de cuisine</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Catégories</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Restaurants</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Traiteurs</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Avis</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content" >
+      <header class="content-header">
+        <div class="header-left">
+          <h1 class="page-title">Restaurants</h1>
+          <p class="page-subtitle">Gérez vos restaurants, statuts, zones et avis</p>
+        </div>
+        <div class="header-actions">
+          <button class="btn primary" type="button">Ajouter un restaurant</button>
+        </div>
+      </header>
+
+      <section class="filters">
+        <div class="filter-group">
+          <label for="zone-select" class="filter-label">Zone:</label>
+          <select id="zone-select" name="zone" class="select">
+            <option value="all" selected>Toutes les zones</option>
+            <option value="plateau">Plateau</option>
+            <option value="medina">Medina</option>
+            <option value="almadies">Almadies</option>
+          </select>
+          <button class="btn" type="button">Filtrer</button>
+        </div>
+      </section>
+
+      <section class="table-wrapper" aria-label="Liste des restaurants">
+        <div class="table-card">
+          <div class="table-scroll" role="region" aria-label="Table des restaurants avec défilement">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Zone</th>
+                  <th scope="col">Statut</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Le Djoloff</td>
+                  <td><a href="mailto:contact@ledjoloff.sn" class="link">contact@ledjoloff.sn</a></td>
+                  <td>Plateau</td>
+                  <td><span class="badge warning">En attente</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Chez Loutcha</td>
+                  <td><a href="mailto:contact@chezloutcha.sn" class="link">contact@chezloutcha.sn</a></td>
+                  <td>Plateau</td>
+                  <td><span class="badge warning">En attente</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Le Thiossane</td>
+                  <td><a href="mailto:contact@lethiossane.sn" class="link">contact@lethiossane.sn</a></td>
+                  <td>Medina</td>
+                  <td><span class="badge success">Vérifié</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sushi Dakar</td>
+                  <td><a href="mailto:contact@sushidakar.sn" class="link">contact@sushidakar.sn</a></td>
+                  <td>Almadies</td>
+                  <td><span class="badge success">Vérifié</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Amanda Larson</td>
+                  <td><a href="mailto:vdevv@mailinator.com" class="link">vdevv@mailinator.com</a></td>
+                  <td>Aut dignissimos iure</td>
+                  <td><span class="badge warning">En attente</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mara Knight</td>
+                  <td><a href="mailto:toy.mukiza@mailinator.com" class="link">toy.mukiza@mailinator.com</a></td>
+                  <td>Possimus quis moles</td>
+                  <td><span class="badge warning">En attente</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Joan Salinas</td>
+                  <td><a href="mailto:tigantinet@mailinator.com" class="link">tigantinet@mailinator.com</a></td>
+                  <td>Amet voluptatem ips</td>
+                  <td><span class="badge warning">En attente</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Serena Thornton</td>
+                  <td><a href="mailto:mhonalath@mailinator.com" class="link">mhonalath@mailinator.com</a></td>
+                  <td>Reprehenderit volupt</td>
+                  <td><span class="badge warning">En attente</span></td>
+                  <td class="actions">
+                    <button class="btn small" type="button">Modifier</button>
+                    <button class="btn small danger" type="button">Supprimer</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-footer" aria-hidden="true">
+            <span class="hint">8 résultats</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </section>
+
+</body>
+</html>

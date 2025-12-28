@@ -35,6 +35,11 @@ section{
     background-color:white;
     
 }
+.en-tete .button-container a{
+  padding-top: 20px;
+  text-decoration: none;
+
+}
 .en-tete .logo-tete img{
     width: 250px;
     top: 150px;
@@ -377,7 +382,7 @@ section{
     display: block;
     font-size: 1.3em;
     margin-bottom: 35px;
-    color: #efefef;
+    color: #f4f2f2;
     font: optional;
 }
 
@@ -723,3 +728,491 @@ section{
     box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
 
   }
+  .affichage-image {
+    width: 100%;
+    height: 35%;
+    background-color: #FFf3e0;;
+    position: relative;
+  }
+  .affichage-image img{
+    width: 100%;
+    height: 650px;
+  }
+  .affichage-image .verifier {
+    position: absolute;
+    top: 660px;
+    z-index: 1;
+    display: flex;
+    padding: 12px;
+    gap: 15px;
+  }
+  .infos-traiteurs{
+    height: 70%;
+    background-color: #FFf3e0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .infos-traiteurs .infos-gauche {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .infos-traiteurs .infos-gauche .a_propos{
+    background-color:white;
+    width: 100%;
+    height: 35%;
+    margin-top: 30px;
+    padding: 20px;
+    
+  }
+  .infos-traiteurs .infos-gauche .specialites{
+    background-color: white;
+    width: 100%;
+    height: 35%;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .infos-traiteurs .infos-gauche .specialites p{
+    display: flex;
+    gap: 60px;
+  }
+  .infos-traiteurs .infos-gauche .servive_proposes{
+    background-color: white;
+    width: 100%;
+    height: 45%;
+    margin-top: 30px;
+    padding: 20px;
+    
+  }
+  .infos-traiteurs .infos-gauche .servive_proposes h2 {
+    margin-bottom: 15px;
+  }
+  .infos-traiteurs .infos-gauche .servive_proposes .service_position {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .infos-traiteurs .infos-droit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    
+  }
+  .infos-traiteurs .infos-droit .contact_traiteur {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35%;
+    background-color: white;
+    padding: 15px;
+  }
+  .infos-traiteurs .infos-droit .experience_traiteur {
+    background-color: white;
+    padding: 15px;
+    gap: 15px;
+  }
+  .infos-traiteurs .infos-droit .experience_traiteur h2 {
+    margin-bottom: 15px;
+  }
+  .infos-traiteurs .infos-droit .langues_parlee {
+    background-color: white;
+    padding: 15px;
+
+  }
+  .infos-traiteurs .infos-droit .langues_parlee h2 {
+    margin-bottom: 15px;
+  }
+  .infos-traiteurs .infos-droit .langues_parlee .langues {
+    display: flex;
+    justify-content: space-around;
+  }
+  .infos-traiteurs .infos-droit .appel {
+    color: white;
+    background-color: white;
+    padding: 15px;
+     display:flex;
+    justify-content: center;
+    
+  }
+  .infos-traiteurs .infos-droit .appel button {
+    padding-left: 70px;
+    padding-right: 80px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #4338CA;
+    border-radius: 15px;
+    color: white;
+  }
+  .infos-traiteurs .infos-droit .appel button:hover {
+    background-color: blue;
+    transform: translate(0.3s);
+    transform: scale(1.1) rotate(2deg);
+    cursor: pointer;
+  }
+
+  /* authentification  */
+  .authentification {
+    gap: 15px;
+    margin: 100px;
+    width: 35%;
+    height: 25%;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
+    margin-left: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    }
+    .authentification:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+      
+    }
+   .authentification .titre_authentifcation{
+    font-weight: bold;
+   }
+   .authentification .input_email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+   .authentification .input_email input{
+    padding: 2%;
+    border-radius: 8px;
+   }
+   .authentification .input_mdp{
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+   .authentification .input_mdp input {
+    padding: 2%;
+    border-radius: 8px;
+   }
+   .authentification .oublie {
+    display: flex;
+    width: 100%;
+    color: red;
+    justify-content: end;
+   }
+   .authentification .check{
+     display: flex;
+    width: 100%;
+    justify-content: start;
+   }
+   .authentification .inscription_compte{
+     display: flex;
+    width: 100%;
+    justify-content: start;
+    color: red;
+   }
+   .authentification .button_authentification{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    padding: 5%
+   }
+   .authentification .button_authentification a {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #ffb300;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+   }
+   .authentification .button_authentification a:hover {
+    transform: rotate(2deg);
+    cursor: pointer;
+   }
+   /* resto a gérer et barre de tap  */
+  
+.dashboard {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100%;
+  color: #1f2937; /* Texte sobre (gris foncé) */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Barre latérale */
+.sidebar {
+  background: #3d2a09; /* Slate très foncé */
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 6px 16px;
+  border-bottom: 1px solid rgba(214, 202, 202, 0.08);
+  margin-bottom: 16px;
+}
+
+.brand-logo {
+  font-size: 20px;
+}
+
+.brand-name {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px 0 0;
+  display: grid;
+  gap: 6px;
+}
+
+.menu-item a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #dfe0e2;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-item a:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.menu-item.active a {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+/* Contenu principal */
+.content {
+  background: #bdc2c7; /* Fond clair */
+  padding: 24px;
+  display: grid;
+  gap: 20px;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #171b29;
+}
+
+.page-subtitle {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #475569;
+}
+
+/* Filtres */
+.filters {
+  background: #fffafa;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-label {
+  font-size: 14px;
+  color: #000000;
+  
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 34px 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccd6e2;
+  background: #ffffff url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%2364748b' d='M5.5 7l4.5 5 4.5-5z'/%3E%3C/svg%3E") no-repeat right 10px center;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+/* Boutons */
+.btn {
+  background-color: #ffb300;
+  color: #040913;
+  border: 1px solid #a7b1bd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background: #dbe7f3;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+.btn.primary {
+  background: #ffb300;
+  border-color: #ffb300;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background: #1d4ed8;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.btn.danger {
+  background: #ef4444;
+  border-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn.danger:hover {
+  background: #dc2626;
+}
+
+/* Carte / Table */
+.table-wrapper {
+  display: grid;
+}
+
+.table-card {
+  background: #f5f5f5;
+  border: 1px solid #1d3b61;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Scroll pour grands tableaux */
+.table-scroll {
+  overflow: auto;
+  max-width: 100%;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px; /* garantit une structure stable sur petits écrans */
+}
+
+.table thead th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  color: #0e1520;
+  background: #f6f6f7;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table tbody td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eef2f7;
+  font-size: 14px;
+  color: #314661;
+}
+
+.table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+/* Liens email */
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Badges de statut */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.badge.success {
+  background: #d8f1e6;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+
+.badge.warning {
+  background: #fff7ed;
+  color: #9a3412;
+  border-color: #cfb18e;
+}
+
+/* Colonne actions */
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Pied de table (info légère) */
+.table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  background: #f1eeee;
+  border-top: 1px solid #eaeaea;
+}
+
+.hint {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .content-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .filter-group {
+    flex-wrap: wrap;
+  }
+}
