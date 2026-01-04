@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Traiteur</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="traiteur.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Traiteurs</title>
 </head>
 <body>
     <header class="en-tete" >
@@ -15,24 +16,26 @@
             
         </div>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="accueil.html">Accueil</a></li>
             <li><a href="#restaurant">Restaurants</a></li>
             <li><a href="#cuisine">Cours de cuisine</a></li>
-            <li><a href="traiteurs.html">Traiteurs</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="traiteur2.html">Traiteurs</a></li>
+            <li><a href="contacter-nous.html">Contact</a></li>
         </ul>
         <div class="button-container">
-            <a  href="authentification.html"class="btn btn-secondary">Connexion</a>
+            <a  href="authentification.html"class="btn-secondary">Connexion</a>
             <button class="btn btn-primary">Inscription</button>
         </div>
 
      </header>
-    <section class="affichage">
+
+     <section class="affichage">
         <div class="description" >
             <h1>Nos Traiteurs</h1>
             <p>Découvrer nos Traiteurs professionnels pour vos evenements, mariages, baptémes et receptions.</p>
         </div>
     </section>
+
     <section class="filtre" >
         <div class="debut">
             <h1>filtre</h1>
@@ -58,10 +61,11 @@
             <button class="reinisialiser"><i class="fa-solid fa-rotate-right"></i>Reinisialiser</button>
         </div>
     </section>
+
     <section class="cart-verification">
         <div class="verification-1">
             <div class="image-verification">
-                <img src="image/thieboudieunerouge.JPG" alt="image" >
+                <img src="image/chocolat1.png" alt="image" >
                 
             </div class="bloque">
             <div class="info" >
@@ -72,13 +76,13 @@
                 <p class="pro-4"><i class="fa-solid fa-phone"></i>+1 (684) 758-7777</p>
             </div>
             <div class="finprofil">
-               <div> <strong class="star"><i class="fa-solid fa-star"></i></strong>0.0</div> 
+               <div> <strong class="star"><i class="fa-solid fa-star" style="color: orange;"></i>0.0</strong></div> 
                 <div class="btn"><button> <a href="Detail-traiteur.html">voir le profil</a></button></div>
             </div>
         </div>
          <div class="verification-1">
             <div class="image-verification">
-                <img src="image/thieboudieunerouge.JPG" alt="image" >
+                <img src="image/chocolat1.png" alt="image" >
                 
             </div class="bloque">
             <div class="info" >
@@ -89,21 +93,19 @@
                 <p class="pro-4"><i class="fa-solid fa-phone"></i>+1 (684) 758-7777</p>
             </div>
             <div class="finprofil">
-               <div> <strong class="star"><i class="fa-solid fa-star"></i></strong>0.0</div> 
+               <div> <strong class="star"><i class="fa-solid fa-star" style="color: orange;"></i> 0.0</strong></div> 
                 <div class="btn"><button> <a href="Detail-traiteur.html">voir le profil</a></button></div>
             </div>
         </div>
     </section>
-    <section class="devenir-traiteur">
-        <div class="description-traiteur">
-            <h2>Vous etes traiteur ?</h2>
-            <p>Rejoignez notre réseau et développez votre activité événementielle!!</p>
-        </div>
-        <div class="button-traiteur">
-           <a href="formulaire.html"><button>Devenir traiteur</button></a> 
-        </div>
-
+    <section id="commencer">
+        <h2>Prêt à commencer ?<br>Commandez dès maintenant.</h2>
+        <span>Découvrez nos restaurants partenaires et faites-vous livrer vos plats préférés.</span>
+        <br>
+        <button class="btn-header-1">Trouver un restaurant !</button>
     </section>
+
+
     <section id="Contact" >
     <div class="propos">
         <h3>A propos</h3>

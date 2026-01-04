@@ -1,0 +1,180 @@
+ .affichage .description {
+    display: grid;
+    text-align: center;
+ }
+ 
+ .formulaire{
+  width: 70%;
+  background-color: #f3f4f6;
+  padding: 15px 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  left: 200px;
+  box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
+ }
+ .information-de-base{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding:10px;
+ }
+ .information-de-base .input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  
+  
+ }
+ .information-de-base .input .input-grid{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 30px;
+  }
+  .informations-professionnelles .categorie{
+    
+    display: grid;
+  }
+  .informations-professionnelles .categorie #categorie {
+    padding: 15px;
+    /* text-align: center; */
+    font-size: 15px;
+  }
+  .informations-professionnelles .categorie label{
+    font-size: 20px;
+    padding: 8px;
+  }
+  .formulaire .annee{
+    display: grid;
+    
+  }
+  .formulaire .annee label{
+    font-size: 20px;
+  }
+  .formulaire .annee input{
+    width: 100%;
+    height: 40px;
+  }
+  .formulaire .Description {
+    display: grid;
+  }
+  .formulaire .Description label{
+    font-size: 20px;
+  }
+  .formulaire .Description textarea{
+    width: 100%;
+    height: 100px;
+  }
+
+  .formulaire .service-propose {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:20px ;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .formulaire .service-propose .coche {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    
+  }
+  .formulaire .service-propose .service-title {
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .formulaire .information-de-contact p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .formulaire .input-info-de-contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 10px 30px; */
+  }
+  .formulaire .input-info-de-contact .telephone {
+    display: grid;
+    margin: 10px;
+  }
+  .formulaire .input-info-de-contact .telephone label {
+    font-size: 15px;
+  }
+  .formulaire .input-info-de-contact .telephone input{
+    padding: 10px;
+
+  }
+  .formulaire .input-info-de-contact .adresse {
+    display: grid;
+    margin: 10px;
+  }
+  .formulaire .input-info-de-contact .adresse label {
+    font-size: 15px;
+  }
+  .formulaire .input-info-de-contact .adresse input{
+    padding: 10px;
+  }
+  .formulaire .photo-de-profil {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+  }
+  .formulaire .photo-de-profil .choix-fichier strong{
+    background-color: #b0a57d;
+    color:  #ffb300;
+    padding: 3px;
+    border: 0.5px solid black;
+  }
+  .formulaire .button-fin {
+  padding: 20px;  
+  position: relative;
+  }
+  .formulaire .button-fin button {
+    padding: 20px 20px;
+    background-color:#ffb300;
+    border-radius: 10px;
+    position: absolute;
+    left: 1000px;
+    top: -12px;
+  
+  }
+  .formulaire .button-fin button:hover{
+    transform: rotate(5deg);
+    background-color: orange;
+    box-shadow:5px 5px 30px rgba(0, 0, 0 , 0.6) ;
+
+  }
+
+
+
+  @media(max-width: 768px) {
+    body{
+        font-size: 14px;
+        
+        
+    }
+    header{
+        display: none;
+    }
+    
+     .formulaire {
+        position: relative;
+        left: 0px;
+        width: 100%;
+        
+    }
+     .affichage .description {
+        margin: 12px;
+     }
+     .formulaire .button-fin button {
+        position: relative;
+        left: 0px;
+     }
+    }

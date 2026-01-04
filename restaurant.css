@@ -1,0 +1,76 @@
+.dashbord {
+    display: grid;
+    grid-template-columns: 15% 85% ;
+    
+}
+.dashbord .sidebar {
+    background-color: rgb(68, 50, 2);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+}
+.dashbord .sidebar .menu ul  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+    list-style-type: none;
+}
+.dashbord .sidebar .menu ul li a {
+    text-decoration: none;
+    color: rgb(182, 182, 153);
+    font-weight: bolder;
+    
+}
+.dashbord .sidebar .button-bas {
+    padding: 20px;
+    color: white
+}
+.dashbord .title_ajoute{
+    display: grid;
+    padding: 10px;
+    grid-template-columns:80% 20% ;
+}
+.dashbord .title_ajoute .ajouter_restaurant {
+    margin-top: 15%;
+}
+.dashbord .title_ajoute .ajouter_restaurant button{
+    padding: 15px 35px;
+    background-color: #ffab3c;
+    border-radius: 15px;
+    border: 1px solid #ffab3c;
+    color: white;
+    font-weight: bolder;
+}
+.zone_de_filtre{
+    display: grid;
+    grid-template-columns: 87% 13%;
+    align-items: center;
+    padding: 20px;
+    gap: 2px;
+    background-color: aliceblue;
+    width: 150vh;
+    border-radius: 25px;
+}
+.zone_de_filtre .zone {
+    display:grid;
+    
+}
+.zone_de_filtre .zone .select {
+    background-color: white;
+    padding: 8px;
+    font-size: 15px;
+    width: 130vh;
+}
+.zone_de_filtre .filtre{
+    padding: 15px;
+    margin-top: 20px;
+}
+.zone_de_filtre .filtre button{
+    padding: 10px;
+    background-color: #ffab3c;
+    border: 1px solid #ffab3c;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}

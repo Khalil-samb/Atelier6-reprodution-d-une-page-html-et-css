@@ -1,0 +1,105 @@
+body{
+    background-image: url(image/pattern-background.svg);
+}
+.affichage-image img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+}
+.affichage-image .verifier{
+    position: absolute;
+    left: 43px;
+    top: 500px;
+    display: flex;
+    gap: 12px;
+    color: aliceblue;
+}
+.infos-traiteurs {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    margin: 70px ;
+}
+.infos-traiteurs  .infos-gauche{
+    width: 100%;
+    display: grid;
+    height: 50px;
+}
+.infos-traiteurs  .infos-gauche .a_propos, .specialites, .servive_proposes{
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.infos-traiteurs  .infos-gauche .servive_proposes .service_position {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.infos-traiteurs .infos-droit {
+    display: grid;
+    height: 70vh;
+    gap: 15px;
+}
+.infos-traiteurs .infos-droit .contact_traiteur {
+    background-color: aliceblue;
+    display: grid;
+    padding: 25px;
+    border-radius: 25px;
+}
+.infos-traiteurs .infos-droit .experience_traiteur{
+    background-color: aliceblue;
+    display: grid;
+    padding: 25px;
+    border-radius: 25px;
+}
+.infos-traiteurs .infos-droit .langues_parlee{
+    background-color: aliceblue;
+    display: grid;
+    padding: 25px;
+    border-radius: 25px;
+}
+.infos-traiteurs .infos-droit .langues_parlee .langues {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.infos-traiteurs .infos-droit .langues_parlee .langues p {
+    background-color: rgb(233, 233, 233);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.infos-traiteurs .infos-droit .appel button{
+    width: 100%;
+    align-items: center;
+    padding: 21px 100px;
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+}
+.infos-traiteurs .infos-droit .appel {
+    align-items: center;
+}
+
+
+
+@media(max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+    header{
+        display: none;
+    }
+    .infos-traiteurs{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 550px;
+    }
+
+
+}

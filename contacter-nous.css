@@ -1,0 +1,224 @@
+body{
+    background-color: #fff3e0;
+}
+.contacter-nous {
+    display: grid;
+    text-align: center;
+    gap: 10%;
+    background-color: #fff3e0;
+}
+.contacter-nous .title-contact {
+    color: #d97805;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contacter-nous .description-contact {
+    color: rgb(56, 56, 46);
+    
+}
+.input_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0 8%;
+    padding: 5%;
+    border-radius: 20px;
+    margin-top: 8%;
+    
+}
+.input_contact .nom-prenom {
+    display: grid;
+    align-items: center;
+}
+.input_contact .nom-prenom .prenom {
+    display: grid;
+    width: 100%;
+    font-size: 18px;
+    
+}
+.input_contact .nom-prenom .prenom input {
+    padding: 5%;
+    border-radius: 8px;
+    width: 42vh;
+    border: 1px solid #ddd;
+}
+.input_contact .nom-prenom .nom {
+    display: grid;
+    width: 100%;
+    font-size: 18px;
+    
+}
+.input_contact .nom-prenom .nom input{
+    padding: 5%;
+    border-radius: 8px;
+    width: 42vh;
+    border: 1px solid #ddd;
+}
+
+.input_contact .email{
+    display: grid;
+    width: 100%;
+    font-size: 18px;
+}
+.input_contact .email input {
+    padding: 5%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.input_contact .telephone {
+    display: grid;
+    width: 100%;
+    font-size: 18px;
+}
+.input_contact .telephone input {
+    padding: 5%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.input_contact .message {
+    display: grid;  
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+}
+.input_contact .message textarea {
+    padding:10%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+.input_contact .button_contact button {
+    padding: 2vh 14vh;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #d97805;
+    border: none;
+    border-radius: 12px;
+}
+.input_contact .button_contact button:hover {
+    box-shadow:
+    0 4px 10px rgba(64, 121, 102, 0.35),
+    inset 0 1px 2px rgba(130, 83, 83, 0.35);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.carte {
+    display: grid;
+    margin: 5%;
+    text-align: center;
+    height: 110vh;
+    grid-template-rows: repeat(3, 30% 30% 30%);
+    align-items: center;
+    
+}
+.carte .carte1{
+    background-color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    padding-top: 10%;
+    border-radius: 25px;
+}
+.carte .carte1:hover {
+    box-shadow:
+    0 4px 10px rgba(64, 121, 102, 0.35),
+    inset 0 1px 2px rgba(130, 83, 83, 0.35);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.carte .carte1 i {
+    background-color: #d97805;
+    font-size: 30px;
+    padding: 17px;
+    border-radius: 42%;
+    align-items: center;
+    color: whitesmoke;
+    padding-right:50px ;
+}
+.carte .carte1 span {
+    font-size: 19px;
+    font-weight: bold;
+    color:#d97805
+}
+.carte .carte1 p {
+    font-size: 20px;
+    color: rgb(89, 90, 92);
+}
+
+
+@media(min-width: 1024px) {
+    body{
+        font-size: 14px;
+    }
+    header{
+        display: none;
+    }
+    
+    
+    .input_contact {
+        height: 80vh;
+        width: 130vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+        margin-left: 300px;
+        padding:20px 70px;
+    }
+    .input_contact .nom-prenom{
+        display: flex;
+        justify-content:space-between ;
+        gap: 15px;
+        width: 100%;
+    }
+    .input_contact .nom-prenom .prenom input {
+        height: 0.5%;
+        width: 550px;
+    }
+     .input_contact .nom-prenom .nom input {
+        height: 0.5%;
+        width: 550px;
+    }
+    .input_contact .email input {
+        height: 0.5%;
+        width: 100%;
+        padding: 25px;
+    }
+    .input_contact .telephone input {
+        height: 0.5%;
+        width: 100%;
+        padding: 25px;
+    }
+    .carte {
+        display:grid;
+        padding: 0;
+        margin: 0;
+        grid-template-columns: 20% 20% 20%;
+        height: 50vh;
+        align-items: center;
+        padding-left: 305px;
+        gap: 182px;   
+    } 
+    .carte .carte1 {
+        margin-top: 185px;
+    }
+    .input_contact .button_contact {
+        width: 100%;
+        background-color: #fff3e0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .input_contact .button_contact button {
+        width: 120vh;
+    }
+
+    
+    }

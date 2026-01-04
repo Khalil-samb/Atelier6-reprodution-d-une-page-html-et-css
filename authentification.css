@@ -1,0 +1,104 @@
+.authentification {
+    gap: 15px;
+    margin: 100px;
+    width: 35%;
+    height: 25%;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow:5px 5px 30px rgba(194, 136, 61, 0.6) ;
+    margin-left: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    border: 2px solid #ffb300;
+
+    
+    }
+    .authentification:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+      
+    }
+   .authentification .titre_authentifcation{
+    font-weight: bold;
+    box-shadow:5px 5px 30px rgba(194, 136, 61, 0.6) ;
+    padding: 10px;
+    border-radius: 8px;
+
+   }
+   .authentification .input_email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+   .authentification .input_email input{
+    padding: 2%;
+    border-radius: 8px;
+   }
+   .authentification .input_mdp{
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+   .authentification .input_mdp input {
+    padding: 2%;
+    border-radius: 8px;
+   }
+   .authentification .oublie {
+    display: flex;
+    width: 100%;
+    color: red;
+    justify-content: end;
+    font-size: 12px;
+    text-decoration:underline;
+   }
+   .authentification .check{
+     display: flex;
+    width: 100%;
+    justify-content: start;
+   }
+   .authentification .inscription_compte{
+     display: flex;
+    width: 100%;
+    justify-content: start;
+    color: red;
+     font-size: 12px;
+    text-decoration:underline;
+   }
+   .authentification .button_authentification{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    padding: 5%
+   }
+   .authentification .button_authentification a {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #ffb300;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+   }
+   .authentification .button_authentification a:hover {
+    transform: rotate(2deg);
+    cursor: pointer;
+   }
+
+
+
+   @media(max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+    header{
+        display: none;
+    }
+    .authentification {
+        width: 100%;
+        margin: 30px 0;
+    }
+    }
